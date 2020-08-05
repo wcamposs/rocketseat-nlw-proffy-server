@@ -1,27 +1,21 @@
-# Funcionalidades:
+# Proffy Server
+Node.js based API REST server to run Proffy applications (web and mobile).
 
-## Conexões
-- Rota para listar o total de conexões realizadas;
-- Rota para criar uma nova conexão;
+## Run:
+To run the application:
+```yarn start```
 
-## Aulas
-- Rota para criar uma aula
-- Rota para listar aulas;
-    - Filtrar por matéria, dia da semana e horário;
+## Routes:
+Used routes (to POST or GET):
+```
+localhost:3333/classes
+localhost:3333/connections
+```
 
+## Create database:
+To create database (you'll need knex installed), run:
+```
+yarn knex:migrate
+```
 
-
-
-
-
-## Informações adicionais
-
-- GET: Buscar ou listar uma informação
-- POST: Criar alguma nova informação
-- PUT: Atualizar uma informação existente
-- DELETE: Deletar uma informação existente
-
-
-## Banco de dados
-
-- Migrations: controlam a versão do banco de dados
+Enjoy!
